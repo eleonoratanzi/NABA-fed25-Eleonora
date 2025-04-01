@@ -1,0 +1,41 @@
+body {
+    color: black;
+}
+div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* width: 30%; */
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper div {
+    width: 30%;
+    height: 100px;
+    border: 1px solid lightgrey;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+.wrapper div:nth-child(5) {
+    background-color: yellowgreen;
+}
+.wrapper div:nth-child(3n) {
+    margin-right: 0%;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellowgreen;
+}
+.bianco{
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.blue{
+    background-color: blue;
+}
+.oblique {
+    font-style: oblique;
+}

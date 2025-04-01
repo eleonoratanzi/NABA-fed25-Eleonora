@@ -1,0 +1,40 @@
+body {
+    background-color: lightpink;
+}
+.wrapper {
+    margin-bottom: 40px;
+    display: grid;
+}
+.wrapper div {
+    margin-bottom: 10pt;
+    width: 20%;
+}
+#child {
+    border: 1px dashed blue;
+}
+.wrapper :first-child {
+    color: blueviolet
+}
+.wrapper :last-child {
+    color: aquamarine;
+}
+.wrapper :not(:nth-child(3)) {
+    font-style: italic;
+}
+.wrapper2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.wrapper2 div {
+    border: 2px solid blue;
+    padding: 5px;
+    width: 20%;
+    margin-bottom: 20pt;
+    margin-right: 20pt;
+}
+.wrapper2 :nth-child(odd) {
+    font-style: oblique;
+}
+.wrapper2 :nth-child(3n) {
+    font-size: larger;
+}

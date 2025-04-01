@@ -1,0 +1,39 @@
+body {
+    color: black;
+    background-color: lightgrey;
+}
+div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* width: 30%; */
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper div {
+    width: 20%;
+    height: 500px;
+    margin-right: 0%;
+    box-sizing: border-box;
+}
+.green {
+    background-color: green;
+}
+.white {
+    background-color: white;
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+.yellow {
+    background-color: yellow;
+}
+.wrappergermania div{
+    width: 60%;
+    height: 166px;
+    margin-bottom: 0%;
+}
