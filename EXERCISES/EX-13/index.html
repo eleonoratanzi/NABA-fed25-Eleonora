@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title> EX_13 </title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+<h1>GUSTO</h1>
+<p> Il gusto è uno dei 5 sensi, quello che ci permette di sentire i sapori.<br>
+    Il gusto viene recepito dalle papille gustative presenti sulla lingua e a seconda della loro posizione <br>
+    possiamo distiguere 5 tipi diversi di sapore. <br> </p>
+    <p class="cta"> <em>Click sul sapore per scoprirne di più!</em></p>
+   <div class="container1">
+    <div class="dolce">
+        <img class="icon" src="img/dolce.png" alt="dolce">
+        <h4>DOLCE</h4>
+        <p class="hidden-text">Il sapore dolce è spesso il primo che impariamo ad amare. Si percepisce sulla punta della lingua ed è legato a una sensazione di piacere immediato. Zuccheri semplici, miele, frutta matura e dessert sono tutti esempi di alimenti dolci. Evolutivamente, questo sapore ci segnala la <strong>presenza di energia pronta all’uso</strong>: ecco perché tendiamo a trovarlo così gratificante. <strong>È rassicurante, familiare, ed è spesso associato a momenti di condivisione e conforto.</strong></p>
+    </div>
+    <div class="acido">
+        <img class="icon" src="img/acido.png" alt="acido">
+        <h4>ACIDO</h4>
+        <p class="hidden-text">L’acido è un sapore vivo, pungente, capace di risvegliare il palato. Lo percepiamo soprattutto ai lati della lingua e lo troviamo in alimenti come il limone, l’aceto, lo yogurt e i frutti rossi. Ha un ruolo importante nel <strong>bilanciare</strong> gli altri sapori e nel dare <strong>freschezza</strong> a molti piatti. In natura, ci aiuta anche a riconoscere cibi fermentati o acerbi, stimolando la salivazione e l’attenzione. <strong>È il sapore della sorpresa e della vitalità.</strong></p>
+    </div>
+</div>
+<div class="container2">
+    <div class="salato">
+        <img class="icon" src="img/salato.png" alt="salato">
+        <h4>SALATO</h4>
+        <p class="hidden-text">Il salato è essenziale per il nostro corpo: il sodio, che lo genera, regola l’equilibrio dei liquidi e il funzionamento dei muscoli. Si percepisce lungo i margini della lingua e lo associamo a cibi come il pane, i formaggi, le olive o i salumi. È il sapore che più spesso accompagna il quotidiano e che <strong>esalta</strong> naturalmente gli altri gusti, rendendo i piatti più completi e appaganti. <strong>Senza il salato, molti cibi sembrerebbero spenti.</strong></p>
+    </div>
+    <h3>5 SAPORI <br> DEL GUSTO</h3>
+    <div class="amaro">
+        <img class="icon" src="img/amaro.png" alt="amaro">
+        <h4>AMARO</h4>
+        <p class="hidden-text">L’amaro è un sapore <strong>complesso</strong> e spesso sottovalutato. È percepito in fondo alla lingua e il nostro corpo tende a reagirvi con cautela: in natura, molte sostanze amare sono tossiche, e per questo il nostro palato ha imparato a riconoscerle. Ma non tutto ciò che è amaro è pericoloso. Caffè, cacao fondente, radicchio e birra ne sono esempi affascinanti. Apprezzare l’amaro significa allenare il gusto alla <strong>profondità e alla sfumatura.</strong></p>
+    </div>
+</div>
+<div class="container3">
+    <div class="umami">
+        <img class="icon" src="img/umami.png" alt="umami">
+        <h4>UMAMI</h4>
+        <p class="hidden-text">Umami, che in giapponese significa “saporito”, è stato riconosciuto come quinto gusto solo nel ventesimo secolo. È il sapore delle proteine, quello che si trova nel parmigiano stagionato, nei funghi, nella salsa di soia, nei brodi di carne. Si avverte in tutta la bocca, in modo <strong>avvolgente</strong>, e ha la capacità di intensificare gli altri sapori rendendoli più persistenti. <strong>L’umami non si nota subito, ma una volta riconosciuto, diventa inconfondibile: è il gusto della profondità.</strong></p>
+    </div>
+ </div>
+ <div class="bottom-text">© 2025 Eleonora Tanzi. Tutti i diritti riservati.</div>
+
+ <script>
+    const sapori = document.querySelectorAll('.dolce, .acido, .salato, .amaro, .umami');
+    const espanso = document.querySelector('.expand');
+
+
+    sapori.forEach(div => {
+      div.addEventListener('click', () => {
+        div.classList.toggle('expand');
+      });
+    });    
+    
+    
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(236, 230, 216);
+    color: black;
+    margin: 0;
+    font-family: 'Akzidenz Grotesk Black', sans-serif;
+    height: 2500px;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Black';
+    src: url('font/Akzidenz-grotesk-black.ttf') format('truetype');
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.rettangolo {
+    position: absolute;
+    top: 0;
+    left: 445px;
+    width: 200px;
+    height: 1400px;
+    background-color: black;
+}
+
+.o-grande {
+    position: absolute;
+    top: 600px;
+    right: -70px;
+    transform: translateY(-50%);
+    font-size: 1500px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.e-piccola {
+    position: absolute;
+    font-size: 80px;
+    left: 145px;
+    top: 1365px;
+}
+
+.zurcher {
+    position: absolute;
+    top: 1210px;
+    font-size: 210px;
+    padding: 0;
+    left: 0;
+}
+
+.maler {
+    position: absolute;
+    top: 1210px;
+    font-size: 210px;
+    padding: 0;
+    left: 880px;
+}
+
+.nomi {
+    position: absolute;
+    top: 1600px;
+    left: 445px;
+    font-size: 80px;
+    color: darkred;
+    line-height: 65px;
+}
+
+.bottom-text {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 60px;
+}

@@ -1,0 +1,53 @@
+body {
+    background-color: burlywood;
+    padding-top: 40px;
+}
+.container {
+    position: relative;
+    border: 1px solid white;
+    height: 900px;
+}
+.container .son {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.static {
+    position: static;
+    background-color: red !important;
+}
+.container > .son.static {
+    background-color: green !important;
+}
+.relative {
+    position: relative;
+    top: 5px;
+    left: 100px;
+}
+.absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;  
+    background-color: white;  
+}
+.fixed {
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    width: 100% !important;
+    height: 40px !important;
+    background-color: chocolate;
+    color: white;
+    border: none !important;
+    /* https//:caniuse.com/css-boxshadow*/
+    box-shadow: 5px 5px 15px 5px rgba(109,54,6,0.31);
+}
+.container2 .son {
+    background-color: lightcyan !important;
+}
+.container2 > .son {
+    background-color: crimson !important;
+}

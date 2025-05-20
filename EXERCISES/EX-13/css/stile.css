@@ -1,0 +1,133 @@
+body {
+    background-color: blue;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    color: rgb(178, 255, 25);
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.cta {
+    color: rgb(178, 255, 25);
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 30px;
+    gap: 20px 40px;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    gap: 20px 60px;
+}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    line-height: 57px;
+    animation-name: cambiacolore;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambiacolore {
+    0%   {color: rgb(201, 33, 24);}
+    20%  {color: rgb(148, 213, 50);}
+    40%  {color: rgb(129, 131, 255);}
+    60%  {color: rgb(175, 32, 168);}
+    80%  {color: rgb(234, 178, 41);}
+    100% {color: rgb(201, 33, 24);}
+  }
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    gap: 0px 100px;
+}
+.container1 p, .container2 p, .container3 p {
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+.container1 > div img, .container2 > div img, .container3 > div img {
+    width: 100%;
+    height: auto;
+}
+.container1 > div, .container2 > div, .container3 > div {
+    text-align: center;
+    width: 500px;
+}
+.dolce {
+    color: rgb(201, 33, 24);
+    transition: 0.5s ease;
+}
+.acido {
+    color: rgb(148, 213, 50);
+    transition: 0.5s ease;
+}
+.salato {
+    color: rgb(129, 131, 255);
+    transition: 0.5s ease;
+}
+.amaro {
+    color: rgb(175, 32, 168);
+    transition: 0.5s ease;
+}
+.umami {
+    color: rgb(234, 178, 41);
+    transition: 0.5s ease;
+}
+.dolce:hover, .acido:hover, .salato:hover, .amaro:hover, .umami:hover {
+    transform: scale(1.1);
+}
+.hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: max-height 0.3s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+.expand .hidden-text {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
+    transform: translateY(0);
+}
+img.icon {
+    transition: transform 0.6s ease;
+}
+.expand img.icon {
+    transform: rotate(360deg);
+}
+.bottom-text {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+    color: gray;
+}
