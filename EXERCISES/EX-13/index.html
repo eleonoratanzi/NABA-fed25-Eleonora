@@ -45,19 +45,23 @@
  </div>
  <div class="bottom-text">© 2025 Eleonora Tanzi. Tutti i diritti riservati.</div>
 
- <script>
-    const sapori = document.querySelectorAll('.dolce, .acido, .salato, .amaro, .umami');
-    const espanso = document.querySelector('.expand');
 
 
-    sapori.forEach(div => {
-      div.addEventListener('click', () => {
-        div.classList.toggle('expand');
-      });
-    });    
-    
-    
-  </script>
+<script>
+  const sapori = document.querySelectorAll('.dolce, .acido, .salato, .amaro, .umami');
+
+  sapori.forEach(div => {
+    div.addEventListener('click', () => {
+      if (div.classList.contains('expand')) {
+        div.classList.remove('expand');
+      } else {
+        sapori.forEach(d => d.classList.remove('expand'));
+        div.classList.add('expand');
+      }
+    });
+  });
+</script>
+
   
 </body>
 </html>
